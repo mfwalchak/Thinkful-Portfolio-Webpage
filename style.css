@@ -1,0 +1,81 @@
+header {
+  background-image: url("images/denver-skyline-silhouette.jpg");
+  height: 200px;
+}
+h1 {
+  font-family: Tahoma, sans-serif;
+  font-size: large;
+  color: navy;
+}
+nav {
+  border: 2px solid navy;
+  padding: 10px;
+  margin: 10px;
+  font-family: Tahoma, sans-serif;
+  font-size: medium;
+  color: goldenrod;
+  float: left;
+}
+main {
+  background-color: navy;
+  color: goldenrod;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+}
+img {
+  border: 5px solid goldenrod;
+  border-radius: 50%;
+}
+.box-lists1 {
+  background-color: navy;
+  width: 50%;
+  padding: 1em;
+  border: 4px solid goldenrod;
+  border-radius: 5px;
+  float: left;
+}
+.box-lists2 {
+  background-color: navy;
+  width: 50%;
+  padding: 1em;
+  border: 4px solid goldenrod;
+  border-radius: 5px;
+  float: right;
+}
+.center-me {
+  text-align:  center;
+}
+.circle-me {
+  border-image-source: 180px;
+}
+/*playing around with these, learned how to make a box from the codeblock in one of the overviews, found out about floating and box-border on W3schools but I don't think I'm implementing it correctly?*/
+.make-a-box {
+ height: 416px;
+ background-color: navy;
+ font-family: Tahoma, sans-serif;
+ font-weight: bold;
+ color: goldenrod;
+ padding: 20px;
+ margin: 20px 0;
+ border-radius: 6px;
+ box-sizing: border-box;
+  &__image {
+    float: left;
+    margin: 10px
+    padding: 10px;
+    width: 46%;
+    margin: 20px 30px 0 0;
+  }
+    &__text {
+    display: inline-block;
+    width: 46%;
+    float: right;
+    }
+}
+footer {
+  height: 100px;
+  width: 500px;
+  margin: 20px;
+  box-sizing: border-box;
+  float: right;
+}

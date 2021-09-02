@@ -42,10 +42,10 @@ a {
   font-size: large;
   font-weight: bold;
 }
-a:link {color blue;}
-a:visited {color navy;}
-a:hover {color goldenrod;}
-a:active {color red;}
+a:link {color: blue;}
+a:visited {color: indianred;}
+a:hover {color: goldenrod;}
+a:active {color: navy;}
 /*create a content box that floats to the left side of the screen*/
 .box-listsLeft {
   background-color: navy;

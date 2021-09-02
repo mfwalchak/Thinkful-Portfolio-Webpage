@@ -1,12 +1,20 @@
+/*place a public-domain background image in the header of the Denver skyline*/
 header {
   background-image: url("images/denver-skyline-silhouette.jpg");
   height: 200px;
 }
+/*set font styling for h1 tag*/
 h1 {
   font-family: Tahoma, sans-serif;
   font-size: large;
   color: navy;
 }
+h2 {
+  font-family: Tahoma, sans-serif;
+  font-size: medium;
+  color: goldenrod;
+}
+/*make a floating box for the navigation links that contrasts to the skyline background and stays on the left side*/
 nav {
   border: 2px solid navy;
   padding: 10px;
@@ -16,17 +24,30 @@ nav {
   color: goldenrod;
   float: left;
 }
+/*set the background and font styling for the main tag*/
 main {
   background-color: navy;
   color: goldenrod;
   font-family: Tahoma, sans-serif;
   font-weight: bold;
 }
+/*make my picture into an oval and give it a contrasting border*/
 img {
   border: 5px solid goldenrod;
   border-radius: 50%;
 }
-.box-lists1 {
+a {
+  background-color: white;
+  font-family: Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+a:link {color blue;}
+a:visited {color navy;}
+a:hover {color goldenrod;}
+a:active {color red;}
+/*create a content box that floats to the left side of the screen*/
+.box-listsLeft {
   background-color: navy;
   width: 50%;
   padding: 1em;
@@ -34,7 +55,8 @@ img {
   border-radius: 5px;
   float: left;
 }
-.box-lists2 {
+/*create a content box that floats to the right side of the screen*/
+.box-listsRight {
   background-color: navy;
   width: 50%;
   padding: 1em;
@@ -48,7 +70,8 @@ img {
 .circle-me {
   border-image-source: 180px;
 }
-/*playing around with these, learned how to make a box from the codeblock in one of the overviews, found out about floating and box-border on W3schools but I don't think I'm implementing it correctly?*/
+/*this should be creating a box that my image is left-centered in with the text on the right or flowing around it but it isn't
+rendering correctly. Look further into this code to keep picture properly positioned*/
 .make-a-box {
  height: 416px;
  background-color: navy;
@@ -60,18 +83,17 @@ img {
  border-radius: 6px;
  box-sizing: border-box;
   &__image {
-    float: left;
-    margin: 10px
-    padding: 10px;
-    width: 46%;
-    margin: 20px 30px 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
     &__text {
     display: inline-block;
     width: 46%;
     float: right;
     }
-}
+  }
 footer {
   height: 100px;
   width: 500px;
